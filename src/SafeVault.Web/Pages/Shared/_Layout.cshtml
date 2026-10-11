@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SafeVault</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <a asp-page="/Index">SafeVault</a>
+            <a asp-page="/Register">Registrati</a>
+            <a asp-page="/Login">Accedi</a>
+            <a asp-page="/Dashboard">Dashboard</a>
+            <a asp-page="/Admin/Index">Admin</a>
+        </nav>
+    </header>
+
+    <main>
+        @RenderBody()
+    </main>
+
+    <footer>
+        <p>SafeVault - Web API + Razor Pages</p>
+    </footer>
+</body>
+</html>

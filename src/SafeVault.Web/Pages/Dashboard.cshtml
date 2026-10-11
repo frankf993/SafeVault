@@ -1,0 +1,21 @@
+@page
+@model DashboardModel
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<h1>Dashboard</h1>
+
+@if (Model.Profile is null)
+{
+    <p class="error">Sessione non valida. Effettua di nuovo il login.</p>
+}
+else
+{
+    <p>Benvenuto, <strong>@Model.Profile.Username</strong>.</p>
+    <p>Ruolo: <strong>@Model.Profile.Role</strong></p>
+}
+
+<form method="post">
+    <button type="submit">Esci</button>
+</form>

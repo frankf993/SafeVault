@@ -1,0 +1,43 @@
+body {
+    font-family: system-ui, sans-serif;
+    margin: 0;
+    color: #1f2937;
+}
+
+header {
+    background: #111827;
+    padding: 1rem;
+}
+
+nav a {
+    color: #e5e7eb;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+    max-width: 640px;
+}
+
+form {
+    display: grid;
+    gap: .75rem;
+    max-width: 360px;
+}
+
+input, button {
+    padding: .5rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+.error {
+    color: #b91c1c;
+}
+
+.success {
+    color: #047857;
+}

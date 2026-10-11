@@ -1,0 +1,9 @@
+@page
+@model SafeVault.Web.Pages.Admin.IndexModel
+@{
+    ViewData["Title"] = "Admin";
+}
+
+<h1>Area amministrativa</h1>
+
+<p class="@Model.IsSuccess ? "success" : "error"">@Model.Message</p>

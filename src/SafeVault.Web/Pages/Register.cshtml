@@ -1,0 +1,27 @@
+@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Registrati";
+}
+
+<h1>Registrati</h1>
+
+<form method="post">
+    <div class="error">@Model.ErrorMessage</div>
+
+    <label>Username</label>
+    <input asp-for="Input.Username" required />
+
+    <label>Email</label>
+    <input asp-for="Input.Email" type="email" required />
+
+    <label>Password</label>
+    <input asp-for="Input.Password" type="password" minlength="12" required />
+
+    <button type="submit">Crea account</button>
+</form>
+
+@if (!string.IsNullOrEmpty(Model.SuccessMessage))
+{
+    <p class="success">@Model.SuccessMessage</p>
+}
